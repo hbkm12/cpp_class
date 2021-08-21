@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/TV/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\TestProj.dir\\Test.cpp.obj -c D:\\TV\\Test.cpp",
+  "file": "D:/TV/Test.cpp"
+},
+{
+  "directory": "D:/TV/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\TestProj.dir\\main.cpp.obj -c D:\\TV\\main.cpp",
+  "file": "D:/TV/main.cpp"
+}
+]
