@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\TV
+CMAKE_SOURCE_DIR = D:\cpp_class_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\TV\build
+CMAKE_BINARY_DIR = D:\cpp_class_test\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\TV\build
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/TV/build/CPackSourceConfig.cmake
+	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake D:/cpp_class_test/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -116,9 +116,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\TV\build\CMakeFiles D:\TV\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\cpp_class_test\build\CMakeFiles D:\cpp_class_test\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\TV\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\cpp_class_test\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -510,24 +510,24 @@ ContinuousCoverage/fast:
 .PHONY : ContinuousCoverage/fast
 
 #=============================================================================
-# Target rules for targets named TestProj
+# Target rules for targets named CppProj
 
 # Build rule for target.
-TestProj: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TestProj
-.PHONY : TestProj
+CppProj: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CppProj
+.PHONY : CppProj
 
 # fast build rule for target.
-TestProj/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestProj.dir\build.make CMakeFiles/TestProj.dir/build
-.PHONY : TestProj/fast
+CppProj/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProj.dir\build.make CMakeFiles/CppProj.dir/build
+.PHONY : CppProj/fast
 
 Test.obj: Test.cpp.obj
 .PHONY : Test.obj
 
 # target to build an object file
 Test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestProj.dir\build.make CMakeFiles/TestProj.dir/Test.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProj.dir\build.make CMakeFiles/CppProj.dir/Test.cpp.obj
 .PHONY : Test.cpp.obj
 
 Test.i: Test.cpp.i
@@ -535,7 +535,7 @@ Test.i: Test.cpp.i
 
 # target to preprocess a source file
 Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestProj.dir\build.make CMakeFiles/TestProj.dir/Test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProj.dir\build.make CMakeFiles/CppProj.dir/Test.cpp.i
 .PHONY : Test.cpp.i
 
 Test.s: Test.cpp.s
@@ -543,7 +543,7 @@ Test.s: Test.cpp.s
 
 # target to generate assembly for a file
 Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestProj.dir\build.make CMakeFiles/TestProj.dir/Test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProj.dir\build.make CMakeFiles/CppProj.dir/Test.cpp.s
 .PHONY : Test.cpp.s
 
 main.obj: main.cpp.obj
@@ -551,7 +551,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestProj.dir\build.make CMakeFiles/TestProj.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProj.dir\build.make CMakeFiles/CppProj.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -559,7 +559,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestProj.dir\build.make CMakeFiles/TestProj.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProj.dir\build.make CMakeFiles/CppProj.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -567,7 +567,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TestProj.dir\build.make CMakeFiles/TestProj.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CppProj.dir\build.make CMakeFiles/CppProj.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -609,7 +609,7 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
-	@echo ... TestProj
+	@echo ... CppProj
 	@echo ... Test.obj
 	@echo ... Test.i
 	@echo ... Test.s

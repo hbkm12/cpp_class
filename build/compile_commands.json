@@ -1,12 +1,12 @@
 [
 {
-  "directory": "D:/TV/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\TestProj.dir\\Test.cpp.obj -c D:\\TV\\Test.cpp",
-  "file": "D:/TV/Test.cpp"
+  "directory": "D:/cpp_class_test/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\CppProj.dir\\Test.cpp.obj -c D:\\cpp_class_test\\Test.cpp",
+  "file": "D:/cpp_class_test/Test.cpp"
 },
 {
-  "directory": "D:/TV/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\TestProj.dir\\main.cpp.obj -c D:\\TV\\main.cpp",
-  "file": "D:/TV/main.cpp"
+  "directory": "D:/cpp_class_test/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\CppProj.dir\\main.cpp.obj -c D:\\cpp_class_test\\main.cpp",
+  "file": "D:/cpp_class_test/main.cpp"
 }
 ]

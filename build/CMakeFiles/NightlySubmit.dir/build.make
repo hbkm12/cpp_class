@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\TV
+CMAKE_SOURCE_DIR = D:\cpp_class_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\TV\build
+CMAKE_BINARY_DIR = D:\cpp_class_test\build
 
 # Utility rule file for NightlySubmit.
 
@@ -81,6 +81,6 @@ CMakeFiles/NightlySubmit.dir/clean:
 .PHONY : CMakeFiles/NightlySubmit.dir/clean
 
 CMakeFiles/NightlySubmit.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\TV D:\TV D:\TV\build D:\TV\build D:\TV\build\CMakeFiles\NightlySubmit.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\cpp_class_test D:\cpp_class_test D:\cpp_class_test\build D:\cpp_class_test\build D:\cpp_class_test\build\CMakeFiles\NightlySubmit.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlySubmit.dir/depend
 
